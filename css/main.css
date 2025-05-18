@@ -1,0 +1,52 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #111;
+  color: white;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Force these styles to apply */
+h1, h2, h3 {
+  color: white !important;
+  font-weight: 800 !important;
+  margin: 20px 0 !important;
+}
+
+p {
+  margin: 15px 0 !important;
+  color: #ddd !important;
+}
+
+/* Button Overrides */
+.btn {
+  background: white !important;
+  color: black !important;
+  padding: 12px 25px !important;
+  border-radius: 5px !important;
+  display: inline-block !important;
+  margin: 10px 5px !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
